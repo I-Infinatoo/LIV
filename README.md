@@ -6,9 +6,9 @@
 <pre>
 <h2>
   <p>
-      1. Ishu Rajan <br>
-      2. Lave Kumar <br>
-      3. Vanshika Srivastava
+      - Ishu Rajan <br>
+      - Lave Kumar <br>
+      - Vanshika Srivastava
   </p>
 </h2>
 </pre>

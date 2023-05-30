@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIV: Home</title>
+    <link rel="icon" type="image/x-icon" href="/assets/Favicon3.png">
+    <script src="./js/welcomePageScript.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <!-- <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form> -->
+    <span style="float:right"><button class="logout" type="submit" onclick="redirectTo('/login')">Logout</button></span>
+    <!-- <span style="float:left"><button class="back" type="submit" onclick="redirectTo('/welcome')">Back</button></span> -->
+
+<h1>LIV</h1>
+    <form method="post" action="/welcome" enctype="multipart/form-data">
+        <!-- <input type="file" id="fileInput"> -->
+            <label for="path">
+                <input type="file" name="file" id="fileInput" placeholder="Select File">
+            </label>
+          <p> You want to Encrypt or Decrypt your file?</p><br>
+          <div class="rbuttons">
+              <label for="typeEncDec" class="typeEncDec"><input type="radio" name="typeEncDec" value="encrypt" onclick="showEncDecOptions()"> Encryption </label>
+              <label for="typeEncDec" class="typeEncDec"><input type="radio" name="typeEncDec" value="decrypt" onclick="showEncDecOptions()"> Decryption<br><br></label>
+          </div>
+          
+  
+        <div id="encLevel"  style="display:none;">
+          <label for="level" class="level"><input type="radio" name="option" value="1"> Level 1<br></label>
+          <label for="level" class="level"><input type="radio" name="option" value="2"> Level 2<br></label>
+          <label for="level" class="level"><input type="radio" name="option" value="3"> Level 3<br></label>
+        </div>
+        <!-- <label for="path">
+            <input type="text" name="path" id="path" placeholder=" Follow path ">
+        </label> -->
+
+        <p> You want to share your file?</p><br>
+        <div class="rbuttons">
+            <label for="isShare" class="isShare"><input type="radio" name="isShare" id="isShare" value="Share" onchange="redirectTo('/share')"> Share </label>
+        </div>
+        
+        <button class="submit" type="submit">Upload</button>
+      
+    </form>
+
+</body>
+</html>

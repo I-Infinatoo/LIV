@@ -1,0 +1,2 @@
+1. Run the 'Run.bat' file present in the root folder.
+	(Make sure to connect with the internet for the very first time)
